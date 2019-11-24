@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <title>Billu The gay</title>
+</head>
+<body class="bg-light-yellow">
+    <div id='app' class="tc container">
+<h1 class="navy">Hello!</h1>
+<img src="./Bille.jpg" height="500px" width="500px" alt="billu" class="br3 bw2 mt2 mb2" ><br>
+<p class="dib">I am Bilakshan Simkhada and I am Gay <strong id='increase' class="fw8">0 </strong> times.</p><br>
+<button onclick="addGay()" class=" grow br3 bg-pink">Add my Gayness</button>
+<button onclick="subGay()" class=" grow br3 bg-black white">Subtract my Gayness</button>
+<hr>
+<button onclick="setRe()" class=" grow br3 bg-red">Reset my Gayness</button>
+
+    </div>
+    <script>
+    var i = 0;
+    function subGay(){
+        if (i != 0) {
+        i= i-1;
+        document.getElementById("increase").innerHTML=`${i}`
+
+        } else {
+            alert("Bilakshan is not Gay enough!\nYou fool!")
+        }
+    }
+    function addGay() {
+        i=i+1;
+        document.getElementById("increase").innerHTML=`${i}`
+    }
+    function setRe(){
+        i=0;
+        document.getElementById("increase").innerHTML=`${i}`
+    }
+    </script>
+</body>
+</html>
